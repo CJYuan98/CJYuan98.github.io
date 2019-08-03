@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>标题</h1>
+  </div>
+
+  <script>
+    $.ajax({
+      type: "get",
+      url: "https://api.github.com/users/ajing98",
+      success: function (response) {
+        document.write(JSON.stringify(response))
+        
+      }
+    });
+  </script>
+</body>
+</html>
